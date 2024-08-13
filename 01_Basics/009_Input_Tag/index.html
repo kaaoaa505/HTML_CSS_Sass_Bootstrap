@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag</title>
+</head>
+
+<body>
+    <h1>Input Tag</h1>
+    <h2>Inputs like text, email, select, and number</h2>
+    <p>
+        First Name: <input type="text" placeholder="Enter First Name">
+    </p>
+    <p>
+        Last Name: <input type="text" placeholder="Enter Last Name">
+    </p>
+    <p>
+        Age: <input type="number" placeholder="Enter Age">
+    </p>
+    <p>
+        Email: <input type="email" placeholder="Enter Email">
+    </p>
+    <p>
+        Date: <input type="date" placeholder="Enter Date">
+    </p>
+    <p>
+        Checkbox:
+        <input type="checkbox" checked> JavaScript
+        <input type="checkbox"> DotNet
+        <input type="checkbox" checked> PHP
+        <input type="checkbox"> Java
+        <input type="checkbox"> Python
+    </p>
+    <p>
+        Radio:
+        <input type="radio" name="radioSelector" checked> JavaScript
+        <input type="radio" name="radioSelector"> DotNet
+        <input type="radio" name="radioSelector" checked> PHP
+        <input type="radio" name="radioSelector"> Java
+        <input type="radio" name="radioSelector"> Python
+    </p>
+    <p>
+        Select Default View:
+        <select name="test_select" id="test_select">
+            <optgroup label="Front End">
+                <option value="HTML">HTML</option>
+                <option value="CSS" selected>CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="NodeJs">NodeJs</option>
+            </optgroup>
+            <optgroup label="Back End">
+                <option value="DotNet">DotNet</option>
+                <option value="PHP">PHP</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        Select Scroll List View:
+        <select name="test_select" id="test_select" size="8" multiple style="display: block;">
+            <optgroup label="Front End">
+                <option value="HTML">HTML</option>
+                <option value="CSS" selected>CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="NodeJs" disabled>NodeJs</option>
+            </optgroup>
+            <optgroup label="Back End">
+                <option value="DotNet">DotNet</option>
+                <option value="PHP">PHP</option>
+                <option value="Java" disabled>Java</option>
+                <option value="Python" disabled>Python</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <input type="submit">
+    </p>
+</body>
+
+</html>
