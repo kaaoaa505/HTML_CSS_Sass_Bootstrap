@@ -1,0 +1,33 @@
+body {
+    background-color: lightcyan;
+}
+
+h1 {
+    color: darkred;
+    letter-spacing: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    border: 5px solid darkcyan;
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+p {
+    margin: 10px;
+    padding: 5px;
+    background-color: lightskyblue;
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+
+a{
+    color: darkcyan;
+    font-size: x-large;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    font-style: italic;
+}
