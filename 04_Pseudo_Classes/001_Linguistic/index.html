@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguistic Pseudo Classes</title>
+
+    <style>
+        :dir(ltr) {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: blue;
+            font-weight: 100;
+        }
+
+        :dir(rtl) {
+            color: green;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+        }
+
+        :lang(en) {
+            background-color: beige;
+        }
+
+        span:lang(en) {
+            background-color: burlywood;
+        }
+
+        :lang(ar) {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <span dir="ltr" lang="en">
+        Khaled Allam Ahmed
+    </span>
+    <span dir="rtl" lang="ar">
+        خالد علام احمد
+    </span>
+</body>
+
+</html>
