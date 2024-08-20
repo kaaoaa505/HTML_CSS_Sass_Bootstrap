@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contains Selector</title>
+
+    <style>
+        a {
+            color: blue;
+            background: lightgray;
+            font-size: 32px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            outline: 1px solid black;
+        }
+
+        a[href*="a"] {
+            color: white;
+            background: goldenrod;
+            font-size: 32px;
+        }
+
+        a[href*="host"] {
+            color: darkgreen;
+            background: greenyellow;
+            font-size: 32px;
+        }
+
+        div.heading>a[href*='abc'][target="_blank"] {
+            color: darkred;
+            background: black;
+            font-size: 32px;
+        }
+
+        li[class*='p'] {
+            color: darkblue;
+            background: coral;
+            font-size: 32px;
+            border: 5px solid black;
+        }
+
+        li[class*='at' i] {
+            color: orangered;
+            background: brown;
+            font-size: 32px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p>
+        Velit veritatis, doloremque ab aperiam quod ducimus ea placeat, rerum libero dolorem maiores? Rem illum
+        distinctio fuga, consequatur aliquid magni optio voluptatem!
+    </p>
+
+    <ul>
+        <li><a href="http://localhost">Link to http</a></li>
+        <li><a href="https://localhost">Link to https</a></li>
+        <li><a href="#">Link to #</a></li>
+        <li><a href="#target">Link to #target</a></li>
+    </ul>
+
+    <div class="heading">
+        <a href="#aaa">aaa</a>
+        <a href="#bbb">bbb</a>
+        <a href="#ccc">ccc</a>
+        <a href="#abc" target="_blank">abc</a>
+        <a href="#abcdef">abcdef</a>
+    </div>
+
+    <div>
+        <p>
+            This is paragraph
+        </p>
+        <a href="#ggg">ggg</a>
+    </div>
+
+    <ul>
+        <li class="green">green</li>
+        <li class="ball">ball</li>
+        <li class="pen">pen</li>
+        <li class="pink">pink</li>
+        <li class="hat">hat</li>
+        <li class="RAT">RAT</li>
+    </ul>
+</body>
+
+</html>
