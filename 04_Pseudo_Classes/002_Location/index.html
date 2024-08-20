@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Pseudo Classes</title>
+
+    <style>
+        a[href="."] {
+            text-align: center;
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: block;
+        }
+
+        a:any-link {
+            font-size: xx-large;
+        }
+
+        a:link {
+            color: skyblue;
+        }
+
+        a:visited {
+            color: lightgray;
+        }
+
+        a:focus {
+            color: black;
+        }
+
+        a:active {
+            color: darkred;
+        }
+
+        a:hover {
+            color: yellowgreen;
+        }
+
+        p:target {
+            font-size: xx-large;
+            background-color: black;
+            color: white;
+        }
+
+        p:target span {
+            font-size: xx-large;
+            background-color: lavenderblush;
+            color: darkred;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <a href=".">↻ Refresh</a>
+    <br>
+
+    <div>
+        <a href="#link_1">Link 1</a>
+        <br>
+        <a href="#link_2">Link 2</a>
+        <br>
+        <a href="#link_3">Link 3</a>
+        <br>
+        <a>Not a link</a>
+        <br>
+        <a href="http://localhost">localhost</a>
+        <br>
+        <a id="dynamic_link_1" href="#">Dynamic link 1</a>
+        <br>
+        <a id="dynamic_link_2" href="#">Dynamic link 2</a>
+        <br>
+        <a id="dynamic_link_3" href="#">Dynamic link 3</a>
+        <br>
+    </div>
+
+    <div>
+        <p id="link_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iste atque sit, ipsam, perspiciatis
+            nesciunt praesentium molestias doloremque dicta debitis sunt beatae maxime reiciendis commodi, voluptate
+            distinctio. Eligendi, illum praesentium?</p>
+        <p id="link_2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est delectus repellendus beatae aut
+            repellat fugit dolore voluptatem porro omnis consectetur, incidunt possimus vel amet similique repudiandae
+            eveniet animi illo. Consequatur.</p>
+        <p id="link_3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio hic suscipit ea? Accusantium
+            ullam voluptas reiciendis natus nostrum facilis, odit saepe porro beatae itaque amet praesentium aliquam
+            aspernatur excepturi quam?</p>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <p id="html">
+            <span>HTML</span>
+            Stands for Hyper Text MarkUp Language
+        </p>
+        <p id="css">
+            <span>CSS</span>
+            Stands for Cascading Style Sheets
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('dynamic_link_1').href = '#dynamic_link_1_' + (new Date()).getTime();
+        document.getElementById('dynamic_link_2').href = '#dynamic_link_2_' + (new Date()).getTime();
+        document.getElementById('dynamic_link_3').href = '#dynamic_link_3_' + (new Date()).getTime();
+    </script>
+</body>
+
+</html>
