@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefix Selector</title>
+
+    <style>
+        a {
+            color: blue;
+            background: lightgray;
+            font-size: 32px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            outline: 1px solid black;
+        }
+
+        a[href^="#"] {
+            color: white;
+            background: goldenrod;
+            font-size: 32px;
+        }
+
+        a[href^="h"] {
+            color: darkgreen;
+            background: greenyellow;
+            font-size: 32px;
+        }
+
+        div.heading>a[href^='#a'][target="_blank"] {
+            color: darkred;
+            background: black;
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p>
+        Velit veritatis, doloremque ab aperiam quod ducimus ea placeat, rerum libero dolorem maiores? Rem illum
+        distinctio fuga, consequatur aliquid magni optio voluptatem!
+    </p>
+
+    <ul>
+        <li><a href="http://localhost">Link to http</a></li>
+        <li><a href="https://localhost">Link to https</a></li>
+        <li><a href="#">Link to #</a></li>
+        <li><a href="#target">Link to #target</a></li>
+    </ul>
+
+    <div class="heading">
+        <a href="#aaa">aaa</a>
+        <a href="#abc" target="_blank">abc</a>
+        <a href="#bbb">bbb</a>
+    </div>
+
+    <div>
+        <p>
+            This is paragraph
+        </p>
+        <a href="#ggg">ggg</a>
+    </div>
+</body>
+
+</html>
