@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Only Pseudo Classes</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 400px;
+            margin: 0 auto;
+            background-color: aliceblue;
+            margin-top: 50px;
+        }
+
+        div {
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        label {
+            width: 100px;
+            display: block;
+            float: left;
+        }
+
+        label::after {
+            content: ':';
+        }
+
+        input[type="submit"] {
+            float: right;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            cursor: pointer;
+        }
+
+        input:enabled {
+            background-color: lightcyan;
+        }
+
+        textarea:read-only {
+            background-color: gray;
+        }
+
+        textarea:read-only:hover {
+            cursor: not-allowed;
+        }
+
+        input:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="full_name">Full Name</label>
+            <input id="full_name" name="full_name" type="text" placeholder="Type your full name...">
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea readonly id="bio" name="bio"
+                placeholder="Type your bio..." cols="20" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nihil, dignissimos a commodi at aut nemo odit minus! Veniam quia eius ipsum a id! Suscipit rem laboriosam inventore excepturi iure.</textarea>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Type your email...">
+        </div>
+        <div>
+            <label for="city">City</label>
+            <input id="city" name="city" type="text" placeholder="Type your city...">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
