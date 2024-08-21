@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Editable Pseudo Classes</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        p[contenteditable="true"]{
+            background-color: aliceblue;
+            color: darkgreen;
+            padding: 10px;
+        }
+
+        p[contenteditable="true"]:focus{
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <p contenteditable="true">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quia quis maiores nemo. At non veniam, magni quisquam libero consequuntur magnam? Expedita consequuntur amet distinctio omnis fugiat sit illo nam?
+    </p>
+</body>
+
+</html>
