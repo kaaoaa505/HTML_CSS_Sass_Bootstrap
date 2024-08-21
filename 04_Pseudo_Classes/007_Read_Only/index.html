@@ -63,6 +63,10 @@
         input:hover {
             background-color: white;
         }
+
+        input:read-write:hover {
+            cursor: grabbing;
+        }
     </style>
 </head>
 
@@ -74,8 +78,8 @@
         </div>
         <div>
             <label for="bio">Bio</label>
-            <textarea readonly id="bio" name="bio"
-                placeholder="Type your bio..." cols="20" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nihil, dignissimos a commodi at aut nemo odit minus! Veniam quia eius ipsum a id! Suscipit rem laboriosam inventore excepturi iure.</textarea>
+            <textarea readonly id="bio" name="bio" placeholder="Type your bio..." cols="20"
+                rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nihil, dignissimos a commodi at aut nemo odit minus! Veniam quia eius ipsum a id! Suscipit rem laboriosam inventore excepturi iure.</textarea>
         </div>
         <div>
             <label for="email">Email</label>
