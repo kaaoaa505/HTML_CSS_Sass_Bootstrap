@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Within Pseudo Classes</title>
+
+    <style>
+        form {
+            width: 400px;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: aliceblue;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+
+        div+div {
+            margin-top: 10px;
+        }
+
+        input:not([type=radio]) {
+            width: 390px;
+            display: block;
+            clear: both;
+        }
+
+        div:focus-within {
+            background-color: skyblue;
+            outline: 5px dotted deepskyblue;
+        }
+
+        div.password-message {
+            display: none;
+        }
+
+        div:focus-within div.password-message {
+            color: darkred;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Focus Within Pseudo Classes</h1>
+
+    <form action="">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Type your name...">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Type your email...">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input id="password" type="password" placeholder="Type your password...">
+            <div class="password-message">
+                * Must have a valid password to proceed
+            </div>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Job</legend>
+
+                <div>
+                    <input type="radio" id="Engineer" name="job" value="Engineer" checked />
+                    <label for="Engineer">Engineer</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Teacher" name="job" value="Teacher" />
+                    <label for="Teacher">Teacher</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Doctor" name="job" value="Doctor" />
+                    <label for="Doctor">Doctor</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Accountant" name="job" value="Accountant" />
+                    <label for="Accountant">Accountant</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
