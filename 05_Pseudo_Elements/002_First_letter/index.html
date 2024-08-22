@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Letter Pseudo Elements</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            padding: 15px;
+            font-size: 20px;
+            text-transform: lowercase;
+        }
+
+        p::first-line {
+            color: blue;
+            font-size: 16px;
+            text-transform: lowercase;
+        }
+
+        p::first-letter {
+            color: goldenrod;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>First Letter Pseudo Elements</h1>
+
+    <div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            <br>
+            Ad numquam saepe, iure eius ipsam velit,
+            <br>
+            consectetur quisquam consequatur doloribus dicta,
+            <br>
+            animi ex minima aut nesciunt ipsum cumque! Ipsa,
+        </p>
+
+        <p>
+            porro nostrum?
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <br>
+            Doloribus distinctio eaque ab amet ut omnis
+            incidunt cum dolore ipsam delectus.
+        </p>
+
+        <p>
+            Ullam rerum dignissimos nam quidem error quasi maxime illo a.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <br>
+            Consectetur deserunt, exercitationem mollitia,
+            <br>
+            temporibus officia neque officiis assumenda aut reprehenderit soluta praesentium nemo minima ducimus est
+            delectus,
+            <br>
+            placeat aliquam voluptates facere.
+        </p>
+    </div>
+</body>
+
+</html>
