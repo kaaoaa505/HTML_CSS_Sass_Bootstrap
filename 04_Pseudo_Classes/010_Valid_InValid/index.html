@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid and Invalid Pseudo Classes</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 400px;
+            margin: 0 auto;
+            background-color: aliceblue;
+            margin-top: 50px;
+        }
+
+        div {
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        label {
+            width: 100px;
+            display: block;
+            float: left;
+        }
+
+        input,
+        textarea{
+            width: 390px;
+        }
+
+        input:invalid,
+        textarea:invalid {
+            color: darkred;
+            border: 1px solid darkred;
+        }
+
+        input:not([type="submit"]):valid,
+        textarea:valid {
+            color: darkgreen;
+            border: 1px solid darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="full_name">Full Name</label>
+            <input required id="full_name" name="full_name" type="text" placeholder="Type your full name...">
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea required id="bio" name="bio" placeholder="Type your bio..." cols="21" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input required id="email" name="email" type="email" placeholder="Type your email...">
+        </div>
+        <div>
+            <label for="city">City</label>
+            <input required id="city" name="city" type="text" placeholder="Type your city...">
+        </div>
+        <div>
+            <label for="age">age</label>
+            <input required id="age" name="age" type="number" min="21" max="60" placeholder="Type your age between 21 & 60...">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
