@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth Child & Last nth Child Pseudo Classes</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        div.container {
+            display: grid;
+            margin: 30px;
+            /* fr: Fraction */
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        div.grid-item {
+            background-color: burlywood;
+            padding: 30px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        div.grid-item:nth-child(even) {
+            color: green;
+        }
+
+        div.grid-item:nth-child(odd) {
+            color: blue;
+        }
+
+        div.grid-item:nth-child(3),
+        div.grid-item:nth-child(4) {
+            font-weight: 900;
+        }
+
+        div.grid-item:nth-child(3n) {
+            outline: 4px solid darkred;
+        }
+
+        div.grid-item:nth-child(3n+1) {
+            outline: 4px solid darkgreen;
+        }
+
+        /* from 3 to -5 */
+        div.grid-item:nth-child(n+3):nth-last-child(n+5) {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>nth Child & Last nth Child Pseudo Classes</h1>
+
+    <div class="container">
+        <div class="grid-item">Apple</div>
+        <div class="grid-item">Mango</div>
+        <div class="grid-item">Kiwi</div>
+        <div class="grid-item">Plum</div>
+        <div class="grid-item">Pear</div>
+        <div class="grid-item">Apricot</div>
+        <div class="grid-item">Cherry</div>
+        <div class="grid-item">Backberry</div>
+        <div class="grid-item">Papaya</div>
+        <div class="grid-item">Orange</div>
+        <div class="grid-item">Grapes</div>
+        <div class="grid-item">Peach</div>
+    </div>
+
+</body>
+
+</html>
