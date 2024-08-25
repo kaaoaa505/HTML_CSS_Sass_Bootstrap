@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Elements</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        li {
+            margin-left: 50px;
+        }
+
+        li>a {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            font-size: 24px;
+            color: salmon;
+        }
+
+        ul>li>a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-top: 1px solid salmon;
+            border-bottom: 1px solid salmon;
+            opacity: 0;
+            transition: 0.6s;
+            transform: scaleY(0);
+            background-color: aliceblue;
+            z-index: -1;
+        }
+
+        li>a:hover::before {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+
+        p {
+            margin: 5px;
+            white-space: pre-line;
+        }
+
+        p::before,
+        p::after {
+            content: '';
+            display: block;
+            height: 20px;
+            background-color: gold;
+            text-align: center;
+            font-weight: bold;
+        }
+        p::before{
+            content: 'p::before';
+        }
+        p::after {
+            content: 'p::after';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Before and After Pseudo Elements</h1>
+
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+
+    <p>
+        Occaecat ad do incididunt qui proident Lorem. Id mollit enim magna labore irure cillum tempor tempor consequat
+        eiusmod enim mollit. Eiusmod quis qui qui excepteur proident enim nostrud enim minim enim eu eu elit. Velit
+        commodo laborum id eu laborum cillum eu incididunt officia nisi velit nostrud. Voluptate est do ullamco laborum
+        minim tempor. Irure occaecat pariatur occaecat voluptate labore in aliquip et.
+
+        Excepteur enim pariatur eu aute fugiat proident officia id velit deserunt fugiat deserunt non. Incididunt elit
+        non ut reprehenderit laboris excepteur adipisicing aliqua consequat exercitation aliquip labore dolore
+        reprehenderit. Labore adipisicing Lorem eu et labore id tempor ullamco dolor. Incididunt elit dolor eiusmod
+        deserunt ex pariatur aute laboris. Adipisicing ex ex ea velit. Nulla cillum consequat officia minim proident
+        laboris reprehenderit et incididunt ut nisi duis. Ipsum dolore deserunt in minim magna laboris excepteur duis
+        magna ullamco.
+
+        Duis duis eu elit id laboris ex commodo amet tempor reprehenderit et. Nostrud magna fugiat enim laboris.
+        Incididunt culpa dolore exercitation adipisicing do sint duis ea commodo laboris pariatur sunt. Veniam tempor
+        culpa quis nulla consequat amet est ut ut enim non et. Dolore nisi proident duis culpa velit. Enim occaecat
+        deserunt ex aliquip. Fugiat magna eiusmod culpa anim sit eiusmod labore cillum esse.
+
+        Dolore ut nulla mollit Lorem veniam laboris fugiat ullamco laborum. Veniam fugiat Lorem aliqua nisi. Lorem quis
+        ipsum exercitation aute sit ex.
+
+        Non quis eu proident aliquip quis excepteur labore aute dolore nisi aute. Reprehenderit adipisicing ex commodo
+        laboris labore cillum consectetur ullamco. Amet do nisi cillum anim cupidatat. Est quis enim duis consequat
+        mollit veniam dolor voluptate amet aliqua. Fugiat commodo sint non nulla occaecat mollit dolore. Lorem magna
+        consectetur enim laborum laboris ex ad.
+
+
+    </p>
+</body>
+
+</html>
