@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            white-space: pre-line;
+            opacity: 70%;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-weight: bolder;
+            color: black;
+            font-size: xx-large;
+            border: 10px solid black;
+        }
+
+        p.linear {
+            background: linear-gradient(-45deg, #0f0, #999, #006);
+        }
+
+        p.linear_with_stops {
+            background: linear-gradient(-45deg, #0f0 10%, #999 70%, #006 90%);
+        }
+
+        p.linear_transparent {
+            background:
+                linear-gradient(0deg, #bf0 30%, transparent 25%),
+                linear-gradient(90deg, #a00 30%, transparent 25%),
+                linear-gradient(180deg, #0a0 30%, transparent 25%),
+                linear-gradient(270deg, #00a 30%, transparent 25%);
+
+            background-color: #f90;
+
+            height: 400px;
+        }
+
+        p.radial {
+            background: radial-gradient(#777 20%, #990 50%, #009);
+        }
+
+        p.radial_circle_closed {
+            background: radial-gradient(circle closest-side, #f90 20%, #bf0 50%, #6df);
+        }
+
+        p.radial_ellipse_closed {
+            background: radial-gradient(ellipse closest-side, #f90 20%, #bf0 50%, #6df);
+        }
+
+        p.radial_top_left {
+            background: radial-gradient(ellipse at top left, #f90 20%, #bf0 50%, #6df);
+        }
+
+        p.radial_rgb {
+            padding: 200px;
+            margin: 50px;
+            border-radius: 50%;
+            background:
+                radial-gradient(circle at 50% 0, #f00f, #f000 60%),
+                radial-gradient(circle at 5% 75%, #0f0f, #0f00 60%),
+                radial-gradient(circle at 95% 75%, #00ff, #0f00 60%),
+                white;
+        }
+
+        p.conic {
+            padding: 200px;
+            margin: 50px;
+            border-radius: 50%;
+            background:
+                conic-gradient(#00f, #6df);
+        }
+
+        p.conic_top_left {
+            padding: 200px;
+            margin: 50px;
+            border-radius: 50%;
+            background:
+                conic-gradient(from 60deg at 40% 30%, #00f, #6df 0.1turn);
+        }
+
+        p.conic_rgb {
+            padding: 200px;
+            margin: 50px;
+            border-radius: 50%;
+            background:
+                conic-gradient(#f00f, transparent 20%),
+                conic-gradient(#0f0f, transparent 50%),
+                conic-gradient(#00ff, transparent 80%),
+                white;
+        }
+
+        p.conic_overlay {
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+        }
+
+        p.conic_overlay img {
+            padding: 0px;
+            margin: 0px;
+            border-radius: 50%;
+            opacity: 50%;
+        }
+
+        p.conic_overlay::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin: 8px;
+            background:
+                conic-gradient(#ff0, #080);
+            mix-blend-mode: overlay;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gradient</h1>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="linear">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="linear_with_stops">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="linear_transparent">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="radial">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="radial_circle_closed">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="radial_ellipse_closed">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="radial_top_left">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="radial_rgb">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="conic">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="conic_top_left">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="conic_rgb">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="conic_overlay">
+        <img src="gears.jpg" alt="">
+    </p>
+</body>
+
+</html>
