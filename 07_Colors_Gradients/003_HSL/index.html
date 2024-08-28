@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL Colors</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            color: hsl(360, 50%, 50%);
+            color: hsl(360deg, 50%, 50%);
+            background-color: hsla(60deg, 70%, 90%, 50%);
+            border: 20px dashed hsla(150deg, 70%, 90%, 50%);
+            white-space: pre-line;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        p.custom{
+            background: linear-gradient(
+                90deg, 
+                hsl(0,100%, 50%),
+                hsl(30,100%, 50%),
+                hsl(60,100%, 50%),
+                hsl(90,100%, 50%),
+                hsl(120,100%, 50%),
+                hsl(150,100%, 50%),
+                hsl(180,100%, 50%),
+                hsl(210,100%, 50%),
+                hsl(270,100%, 50%),
+                hsl(300,100%, 50%),
+                hsl(330,100%, 50%),
+                hsl(0,100%, 50%)
+            );
+
+            border-radius: 50%;
+            padding: 110px;
+            color: black;
+            font-size: large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HSL</h1>
+    <h2>hsl(hue, saturation, lightness)</h2>
+    <h2>hsla(hue, saturation, lightness, alpha)</h2>
+    <h4>hue between 0° and 360°</h4>
+    <h4>saturation between 0% and 100%</h4>
+    <h4>lightness between 0% and 100%</h4>
+    <h5>ex: hsl(310,50%,25%)</h5>
+    <h5>ex: hsl(310deg,50%,25%)</h5>
+
+    <p>
+        Culpa occaecat qui velit est in aliquip aute minim consectetur cupidatat. Dolore magna magna nisi commodo in
+        voluptate commodo esse. Tempor amet Lorem pariatur id irure anim cillum occaecat laborum dolore dolor do ex.
+        Laborum anim laborum aute labore aliqua irure reprehenderit.
+
+        Ad excepteur nisi non esse magna duis culpa sit quis velit sint. Ex cillum deserunt qui labore consectetur irure
+        Lorem et fugiat commodo do ex sint. Do tempor fugiat ad occaecat eu tempor aliquip incididunt laboris. Ad esse
+        nulla sint voluptate ullamco do cupidatat amet dolor minim tempor aliqua. Voluptate nisi amet ad aliqua commodo
+        nisi amet enim et non ea anim velit. Sint dolor ea voluptate exercitation incididunt qui id ea magna ex veniam
+        do.
+
+        Sunt eu Lorem sit veniam minim adipisicing minim et dolor magna aliqua do nulla velit. Laborum laboris ex
+        aliquip nisi. Do ullamco aliquip excepteur ad commodo nostrud culpa. Laborum elit commodo labore irure tempor.
+        Ut consectetur aliquip reprehenderit qui. Incididunt amet culpa consectetur exercitation ut.
+    </p>
+
+    <p class="custom">
+        Culpa occaecat qui velit est in aliquip aute minim consectetur cupidatat. Dolore magna magna nisi commodo in
+        voluptate commodo esse. Tempor amet Lorem pariatur id irure anim cillum occaecat laborum dolore dolor do ex.
+        Laborum anim laborum aute labore aliqua irure reprehenderit.
+
+        Ad excepteur nisi non esse magna duis culpa sit quis velit sint. Ex cillum deserunt qui labore consectetur irure
+        Lorem et fugiat commodo do ex sint. Do tempor fugiat ad occaecat eu tempor aliquip incididunt laboris. Ad esse
+        nulla sint voluptate ullamco do cupidatat amet dolor minim tempor aliqua. Voluptate nisi amet ad aliqua commodo
+        nisi amet enim et non ea anim velit. Sint dolor ea voluptate exercitation incididunt qui id ea magna ex veniam
+        do.
+
+        Sunt eu Lorem sit veniam minim adipisicing minim et dolor magna aliqua do nulla velit. Laborum laboris ex
+        aliquip nisi. Do ullamco aliquip excepteur ad commodo nostrud culpa. Laborum elit commodo labore irure tempor.
+        Ut consectetur aliquip reprehenderit qui. Incididunt amet culpa consectetur exercitation ut.
+    </p>
+</body>
+
+</html>
