@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Unit vm(Viewport width)(1vw = 1% of screen width)</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            width: 50vw;
+            margin: 0 auto;
+
+            text-align: center;
+            background-color: skyblue;
+
+            /* font-size: 20vm; INVALID */
+            font-size: 2em;
+        }
+
+        div {
+            width: 50vw;
+            margin: 1em auto;
+
+            text-align: center;
+            background-color: khaki;
+
+            /* font-size: 10vm; INVALID */
+            font-size: 1em;
+
+            /* padding: 10vm; INVALID */
+            padding: 1em;
+
+            /* border: 1vm solid black; INVALID */
+            border: 1em solid black;
+
+            /* outline: 1vm solid goldenrod; INVALID */
+            outline: 1em solid goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Relative Unit vm(Viewport width)(1vw = 1% of screen width)</h1>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ratione enim a labore, sit omnis cumque tenetur
+        dolore vitae, volummates dignissimos corporis deleniti. Blanditiis praesentium similique libero laudantium iste
+        mollitia.
+    </div>
+
+</body>
+
+</html>
