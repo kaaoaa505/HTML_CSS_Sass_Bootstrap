@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header>h1,
+        footer {
+            background-color: deepskyblue;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        main{
+            width: 90vmin;
+            background-color: lightblue;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        main>article{
+            display: inline-block;
+            padding: 1em;
+            margin: 2em;
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Display Property</h1>
+    </header>
+
+    <main>
+        <article class="Column_001">
+            Column_001
+        </article>
+        <article class="Column_002">
+            Column_002
+        </article>
+        <article class="Column_003">
+            Column_003
+        </article>
+        <article class="Column_004">
+            Column_004
+        </article>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+
+</body>
+
+</html>
