@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning rows and columns</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body{
+            padding-bottom: 25px;
+        }
+
+        header>h1,
+        footer {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: cadetblue;
+            color: white;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        main {
+            display: grid;
+            background-color: aliceblue;
+            border: 5px solid cadetblue;
+            padding: 20px;
+
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            grid-gap: 10px;
+        }
+
+        main>section {
+            display: inline-block;
+            text-align: center;
+            padding: 1em;
+            font-size: 1.4em;
+            background-color: skyblue;
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        main>section:first-of-type,
+        main>section:last-of-type {
+            grid-column: 1/6;
+        }
+
+        main>section:nth-child(2),
+        main>section:nth-child(4) {
+            grid-row: span 2;
+        }
+
+        main>section:nth-child(3) {
+            grid-column: span 3;
+        }
+
+        main>section:nth-child(5),
+        main>section:nth-child(6),
+        main>section:nth-child(7) {
+            grid-row: span 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Spanning rows and columns</h1>
+    </header>
+
+    <main>
+        <section>Header</section>
+        <section>Menu</section>
+        <section>Main Content</section>
+        <section>Sidebar</section>
+        <section>Sub Content</section>
+        <section>Sub Content</section>
+        <section>Sub Content</section>
+        <section>Footer</section>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+
+</html>
