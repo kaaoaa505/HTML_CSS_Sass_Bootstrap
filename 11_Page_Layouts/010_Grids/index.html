@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids with fraction and gap</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        header>h1,
+        footer{
+            text-align: center;
+            text-transform: uppercase;
+            background-color: cadetblue;
+            color: white;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        main{
+            display: grid;
+            background-color: aliceblue;
+            border: 5px solid cadetblue;
+
+            /* grid-template-columns: 25vw 25vw 25vw 25vw; */
+            /* grid-template-columns: repeat(4, 25vw); */
+            /* grid-template-columns: repeat(4, 2fr); */
+            /* grid-template-columns: 1fr 1fr 1fr 200px; */
+            grid-template-columns: 40% 1fr 1fr 2fr;
+
+            /* grid-template-rows: 25vh 25vh; */
+            /* grid-template-rows: repeat(2, 25vh); */
+            grid-template-rows: repeat(2, 1fr);
+
+            grid-gap: 10px;
+        }
+
+        main>section{
+            text-align: center;
+            padding: 1em;
+            font-size: 1.4em;
+            background-color: skyblue;
+            border: 1px solid black;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grids with fraction and gap</h1>
+    </header>
+
+    <main>
+        <section>A</section>
+        <section>B</section>
+        <section>C</section>
+        <section>D</section>
+        <section>E</section>
+        <section>F</section>
+        <section>G</section>
+        <section>H</section>
+    </main>
+    
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+</html>
