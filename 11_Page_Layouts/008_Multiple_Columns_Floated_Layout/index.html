@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Columns Floated Layout</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            background-color: goldenrod;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            margin-bottom: 0.25em;
+            padding: 1em;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            background-color: goldenrod;
+            color: white;
+        }
+
+        main {
+            width: 88vmin;
+            margin: 0 auto;
+            background-color: deepskyblue;
+        }
+
+        main::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        main>article {
+            border: 1px solid seagreen;
+            background-color: #033;
+            color: white;
+            padding: 1rem;
+            margin: 1rem;
+            float: left;
+            width: 9rem;
+        }
+
+        main>article:last-of-type {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Multiple Columns Floated Layout</h1>
+    </header>
+
+    <main>
+        <article class="Column_001">
+            Column_001
+        </article>
+        <article class="Column_002">
+            Column_002
+        </article>
+        <article class="Column_003">
+            Column_003
+        </article>
+        <article class="Column_004">
+            Column_004
+        </article>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+
+</body>
+
+</html>
