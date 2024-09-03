@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container Properties</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            padding: 4vmax 0 2vmax 0;
+        }
+
+        header,
+        footer {
+            background-color: blanchedalmond;
+            text-align: center;
+            text-transform: uppercase;
+            position: fixed;
+            width: 100%;
+            font-size: 1em;
+        }
+
+        header {
+            top: 0;
+            height: 4vmax;
+        }
+
+        footer {
+            bottom: 0;
+            height: 2vmax;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            background-color: aliceblue;
+            height: 92vh;
+
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+
+            /* align-items: stretch; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            align-items: baseline;
+
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+
+            /* flex-flow: row wrap-reverse; */
+            flex-flow: row wrap;
+        }
+
+        section {
+            padding: 10px;
+            margin: 10px;
+            background-color: cornflowerblue;
+            width: 100px;
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Flex Container Properties</h1>
+    </header>
+
+    <main>
+        <section style="height: 100px; font-size: 36px;">A</section>
+        <section style="height: 300px; font-size: 16px;">B</section>
+        <section style="height: 200px; font-size: 24px;">C</section>
+        <section style="height: 400px; font-size: 40px;">D</section>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+
+</html>
