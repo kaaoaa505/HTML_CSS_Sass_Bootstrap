@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Basics</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            padding-bottom: 50px;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: blanchedalmond;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        main {
+            background-color: beige;
+        }
+
+        main>h2 {
+            color: darkblue;
+        }
+
+        main>button {
+            background-color: deepskyblue;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            font-weight: bolder;
+            box-shadow: 10px 5px 5px gray;
+            text-shadow: 1px 1px 2px blue;
+        }
+
+        main>p {
+            font-size: normal;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 450px) {
+            main>h2 {
+                text-align: center;
+                background-color: darkblue;
+                color: white;
+            }
+            
+            header>h1 {
+                font-size: 18px;
+            }
+
+            main>h2 {
+                font-size: 16px;
+            }
+
+            main>button {
+                width: 90%;
+            }
+
+            main>p {
+                font-size: 14px;
+                padding: 1px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            *{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            header>h1 {
+                font-size: 16px;
+            }
+
+            body,main{
+                background-color: black;
+            }
+
+            main>h2 {
+                font-size: 14px;
+            }
+
+            main>p {
+                font-size: 12px;
+                padding: 0;
+                background-color: black;
+                color: white;
+            }
+
+            main>button {
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Media Query Basics</h1>
+    </header>
+
+    <main>
+        <h2>Main Title</h2>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequatur commodi delectus est, numquam
+            expedita ipsam consectetur fuga, a sapiente ducimus, ea eum velit voluptatem dignissimos animi nisi maxime
+            accusantium.
+        </p>
+
+        <p>
+            Exercitation cupidatat dolor tempor est laboris amet mollit Lorem aliquip aute est. Ut qui culpa sit Lorem
+            enim do nulla qui. Id mollit fugiat commodo enim qui Lorem eiusmod nisi incididunt adipisicing sit tempor.
+
+            Sunt proident Lorem labore occaecat adipisicing nulla eiusmod. Sint eiusmod exercitation aliquip irure. Duis
+            id anim commodo laborum. Laboris irure est ipsum esse ad nulla commodo officia sint. Excepteur eiusmod non
+            eiusmod dolor.
+
+            Elit amet aliqua mollit adipisicing ad eiusmod minim ullamco exercitation excepteur. In occaecat anim id
+            dolore laborum quis ullamco tempor ullamco minim eiusmod. Eiusmod cupidatat esse ad nulla ex proident anim
+            consequat ex tempor labore adipisicing. Laborum aliqua dolore aliqua ullamco aliquip dolor commodo
+            voluptate. Nisi reprehenderit tempor fugiat eu irure. Cupidatat do tempor velit laboris cupidatat qui
+            commodo qui laborum eu enim in minim commodo. In magna aliquip sit ut aliquip labore tempor duis est quis
+            consequat officia eu elit.
+        </p>
+
+        <button>Read More...</button>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed
+    </footer>
+</body>
+
+</html>
