@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Item Properties</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 4vmax 0 2vmax 0;
+        }
+
+        header,
+        footer {
+            background-color: blanchedalmond;
+            text-align: center;
+            text-transform: uppercase;
+            position: fixed;
+            width: 100%;
+            font-size: 1em;
+        }
+
+        header {
+            top: 0;
+            height: 4vmax;
+        }
+
+        footer {
+            bottom: 0;
+            height: 2vmax;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            background-color: aliceblue;
+            height: 92vh;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+
+        section {
+            padding: 10px;
+            margin: 10px;
+            background-color: cornflowerblue;
+            width: 100px;
+            text-align: center;
+            font-size: 36px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            flex-basis: 200px;
+            /* flex-grow: 1; */
+            order: 4;
+        }
+
+        section:nth-child(2) {
+            align-self: flex-end;
+            font-size: 16px;
+            order: 1;
+        }
+
+        section:nth-child(3) {
+            align-self: flex-start;
+            font-size: 24px;
+            order: 2;
+        }
+
+        section:nth-child(4) {
+            align-self: stretch;
+            font-size: 40px;
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Flex Item Properties</h1>
+    </header>
+
+    <main>
+        <section>A</section>
+        <section>B</section>
+        <section>C</section>
+        <section>D</section>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+
+</html>
