@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Custom Card Display</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: aquamarine;
+        }
+
+        main {
+            min-height: 94vh;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid aquamarine;
+            width: 400px;
+        }
+
+        .card img {
+            width: 200px;
+        }
+
+        .card button{
+            background-color: darkcyan;
+            padding: 5px;
+            margin-top: 10px;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Flex Custom Card Display</h1>
+    </header>
+
+    <main>
+        <section class="cards">
+            <article class="card">
+                <img src="./gears.jpg" alt="">
+                <div class="details">
+                    <h3>Details</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptatum tenetur animi,
+                        quibusdam
+                        molestiae praesentium?
+                    </p>
+                    <button type="button">Read More...</button>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./gears.jpg" alt="">
+                <div class="details">
+                    <h3>Details</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptatum tenetur animi,
+                        quibusdam
+                        molestiae praesentium?
+                    </p>
+                    <button type="button">Read More...</button>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./gears.jpg" alt="">
+                <div class="details">
+                    <h3>Details</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptatum tenetur animi,
+                        quibusdam
+                        molestiae praesentium?
+                    </p>
+                    <button type="button">Read More...</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed
+    </footer>
+
+</body>
+
+</html>
