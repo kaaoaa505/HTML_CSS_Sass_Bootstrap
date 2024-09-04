@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Type All</title>
+
+    <style>
+        :root {
+            --light-color: white;
+            --dark-color: black;
+            --primary-color: lightseagreen;
+            --hover-color: olive;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            padding-bottom: 100px;
+        }
+
+        header,
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                li {
+                    margin: 10px;
+                    border: solid;
+
+                    a {
+                        padding: 10px;
+                        background-color: var(--primary-color);
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover {
+                            background-color: var(--hover-color);
+                        }
+
+                        &:focus {
+                            background-color: var(--dark-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        @media all and (max-width: 400px) {
+            header {
+                h1 {
+                    font-size: 14px;
+                }
+            }
+
+            footer {
+                font-size: 10px;
+            }
+
+            main {
+                background-color: var(--dark-color);
+                color: var(--light-color);
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Media Type All</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#support">Support</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam incidunt minus corrupti odit dicta error,
+        eligendi provident aut natus inventore quo debitis distinctio quasi sequi corporis rem molestias deserunt
+        assumenda!
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed
+    </footer>
+</body>
+
+</html>
