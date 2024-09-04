@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Type Print</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            padding-top: 50px;
+            padding-bottom: 100px;
+            background-color: #066;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: beige;
+            width: 100%;
+            position: fixed;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            padding: 0 10px;
+
+            h2 {
+                color: salmon;
+                font-size: 45px;
+            }
+
+            p {
+                margin: 0 auto;
+                font-size: 32px;
+            }
+        }
+
+        @media print {
+            * {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            body {
+                background-color: white;
+
+                main {
+                    text-align: justify;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Media Type Print</h1>
+    </header>
+
+    <main>
+        <h2>Main Title</h2>
+        <p>
+            Officia aliqua consequat commodo in id. Cupidatat pariatur cupidatat non ad sunt ut ex aliqua qui do enim
+            reprehenderit mollit tempor. Ullamco laboris voluptate ipsum tempor. Consequat aliqua consectetur ea et
+            tempor eiusmod labore adipisicing nisi. Eiusmod quis nostrud aliqua excepteur sit aliquip sit adipisicing
+            voluptate consequat. Enim officia minim anim esse exercitation commodo amet magna. Non aliquip magna
+            pariatur commodo enim veniam pariatur.
+
+            Eu esse ut occaecat voluptate sit Lorem. Elit dolor irure velit cillum proident voluptate mollit quis aliqua
+            id ea. Proident culpa ea est id adipisicing fugiat. Minim et elit ullamco consectetur ut do quis non labore
+            irure aliquip adipisicing. Esse ad officia velit dolor excepteur ea non incididunt sunt mollit reprehenderit
+            sint ipsum ea. Commodo officia anim pariatur officia eiusmod et reprehenderit nulla tempor.
+        </p>
+        <p>
+            Ut laboris laborum non officia pariatur sit id ea magna excepteur aliqua. Voluptate duis qui Lorem esse
+            dolor aliqua eiusmod velit elit deserunt. Qui voluptate eiusmod adipisicing enim amet proident nulla.
+            Voluptate exercitation enim ut aliqua laboris qui sint velit nulla incididunt non incididunt aliqua. Do
+            pariatur elit occaecat enim dolor ut occaecat minim deserunt minim officia. Ex non ut amet duis excepteur
+            sit consequat ad. Veniam in ullamco laborum ea occaecat.
+
+            Eu consectetur est reprehenderit do quis Lorem consectetur ad. Fugiat ea nulla veniam consequat enim irure
+            eiusmod. Enim consectetur incididunt labore veniam consequat excepteur adipisicing tempor id et. Enim veniam
+            voluptate est sunt laboris enim exercitation deserunt. Eu nulla amet adipisicing do ut sint tempor cillum
+            minim.
+
+            Proident velit pariatur sit ullamco sunt proident qui et. Laboris nostrud irure ea aliqua qui. Quis veniam
+            Lorem quis culpa dolor sunt magna cupidatat velit ullamco ut adipisicing.
+
+            Consectetur reprehenderit velit laboris sunt in velit est velit tempor incididunt. Anim commodo adipisicing
+            et ullamco in laborum esse commodo aliqua consectetur exercitation pariatur aliquip excepteur. Culpa tempor
+            Lorem Lorem irure velit. Commodo laboris nostrud cupidatat laborum sunt amet nulla nisi cupidatat ut
+            pariatur eu Lorem. Incididunt deserunt excepteur anim mollit enim culpa officia.
+
+            Ipsum aliqua eu sunt nostrud enim. Officia minim commodo anim nostrud eiusmod est. Dolor cillum mollit ut
+            est occaecat amet est dolore duis anim proident id esse. Nisi adipisicing velit aliqua qui voluptate commodo
+            mollit voluptate. Duis cillum adipisicing anim adipisicing mollit laborum.
+        </p>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed
+    </footer>
+</body>
+
+</html>
