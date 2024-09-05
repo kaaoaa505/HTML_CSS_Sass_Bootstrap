@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive using media query</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            padding: 50px 0;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            text-transform: uppercase;
+            position: fixed;
+            width: 100%;
+            background-color: darkslategray;
+            color: white;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            padding: 0 10px;
+
+            h2 {
+                color: darkslategray;
+            }
+
+            form {
+                max-width: 1020px;
+                margin: 0 auto;
+                border: 5px solid darkslategray;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 10px;
+                justify-content: space-around;
+
+                div {
+                    label {
+                        &::after {
+                            content: '';
+                            width: 100%;
+                            clear: both;
+                            display: block;
+                        }
+                    }
+
+                    input {
+                        padding: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .clear {
+            width: 100%;
+            clear: both;
+            display: grid;
+            grid-template-columns: auto auto;
+
+            button {
+                margin: 20px auto;
+                padding: 10px;
+                cursor: pointer;
+                background-color: darkgreen;
+                color: white;
+                font-size: 14px;
+                border-radius: 10px;
+                width: 71px;
+                margin-left: -5px;
+
+                &:hover {
+                    background-color: green;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        @media all and (max-width: 940px) {
+            header {
+                h1 {
+                    font-size: 18px;
+                }
+            }
+
+            main {
+                h2 {
+                    text-align: center;
+                }
+
+                form {
+                    width: 480px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        @media all and (max-width: 480px) {
+            header {
+                h1 {
+                    font-size: 14px;
+                }
+            }
+
+            main {
+                h2 {
+                    text-align: center;
+                }
+
+                form {
+                    width: 273px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Responsive using media query</h1>
+    </header>
+
+    <main>
+        <h2>Register Form</h2>
+
+        <form action="">
+            <div>
+                <label for="first_name">First Name</label>
+                <input id="first_name" type="text" placeholder="First Name...">
+            </div>
+            <div>
+                <label for="last_name">last Name</label>
+                <input id="last_name" type="text" placeholder="last Name...">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email...">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password...">
+            </div>
+            <div class="clear">
+                <div></div>
+                <button type="button">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed
+    </footer>
+</body>
+
+</html>
