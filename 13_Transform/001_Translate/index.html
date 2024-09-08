@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform - Translate Method</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            padding: 50px 0;
+            background-color: aliceblue;
+        }
+
+        header,
+        footer {
+            position: fixed;
+            width: 100%;
+            background-color: cornflowerblue;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            padding: 0 10px;
+        }
+
+        section {
+            width: 200px;
+            padding: 25px;
+            margin: 15px;
+            color: aliceblue;
+        }
+
+        .draw_2d {
+            background-color: darkred;
+            /* transform: translate(150px, 120px); */
+            transform: translateX(150px) translateY(120px);
+        }
+
+        .draw_3d {
+            background-color: darkgreen;
+            transform: perspective(200px) translate3d(200px, 50px, 120px) rotateY(12deg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Transform - Translate Method</h1>
+    </header>
+
+    <main>
+        <section class="draw_2d">2D Transform</section>
+        <section class="draw_3d">3D Transform</section>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+
+</html>
