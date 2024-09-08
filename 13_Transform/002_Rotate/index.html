@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform - Rotate Method</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            padding: 50px 0;
+            background-color: aliceblue;
+        }
+
+        header,
+        footer {
+            position: fixed;
+            width: 100%;
+            background-color: cornflowerblue;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            padding: 0 10px;
+        }
+
+        section {
+            width: 200px;
+            padding: 25px;
+            margin: 15px;
+            color: aliceblue;
+        }
+
+        .draw_2d {
+            background-color: darkred;
+            transform: rotate(120deg) translateY(-150px);
+        }
+
+        .draw_3d {
+            background-color: darkgreen;
+            transform: perspective(200px) translate3d(105px, 64px, 160px) rotateY(0.7turn);
+        }
+
+        .draw_3d_rotate_3d {
+            background-color: orangered;
+            transform: perspective(200px)  translate3d(10px, 120px, 10px) rotate3d(1,-1,1,-41deg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Transform - Rotate Method</h1>
+    </header>
+
+    <main>
+        <section class="draw_2d">2D Transform</section>
+        <section class="draw_3d">3D Transform</section>
+        <section class="draw_3d_rotate_3d">3D Transform 3D Rotate</section>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+
+</html>
