@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform - Cube Hover Rotate</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color: darkgray;
+        }
+
+        header,footer{
+            background-color: black;
+            color: chocolate;
+            text-align: center;
+            text-transform: uppercase;
+            position: fixed;
+            width: 100%;
+        }
+
+        header{
+            top: 0;
+        }
+
+        footer{
+            bottom: 0;
+        }
+
+        main {
+            perspective: 1000px;
+            background-color: lightgray;
+        }
+
+        .cube {
+            background-color: gray;
+            width: 30%;
+            margin: 100px auto 0 auto;
+            transform-style: preserve-3d;
+            transition: 1.5s;
+        }
+
+        .cube:hover {
+            transform: rotateX(90deg);
+            transition: 1.5s;
+        }
+
+        .front,
+        .back {
+            background-color: black;
+            color: chocolate;
+            outline: 1px solid chocolate;
+            width: 200px;
+            height: 200px;
+        }
+
+        .back {
+            transform: rotateX(-90deg) translateZ(-100px);
+        }
+
+        .front {
+            transform: translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Transform - Cube Hover Rotate</h1>
+    </header>
+
+    <main>
+        <div class="cube">
+            <div class="front">
+                <h1>front</h1>
+            </div>
+            <div class="back">
+                <h1>back</h1>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+
+</html>
