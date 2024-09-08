@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform - Scale Method</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 50px 0;
+            background-color: deepskyblue;
+        }
+
+        header,
+        footer {
+            background-color: dodgerblue;
+            color: gold;
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            background-color: skyblue;
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        div,
+        .d1,
+        .d2,
+        .d3 {
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            color: white;
+            border: 5px dashed black;
+            margin: 10px;
+        }
+
+        .d1 {
+            transform: scale(1);
+        }
+
+        .d2 {
+            /* transform: scale(2); */
+            /* transform: scaleX(2.5) scaleY(2.5); */
+            transform: scale(2, 2.5);
+        }
+
+        .d3 {
+            transform: scale(3);
+        }
+
+        .d_3 {
+            transform: scale(-3);
+            border: 5px dashed darkred;
+        }
+
+        .d_3d {
+            transform: scale3d(4, 0.5, 1) rotate(-30deg) translateY(200px) perspective(200px);
+            border: 5px dashed goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Transform - Scale Method</h1>
+    </header>
+
+    <main>
+        <div>
+            Div normal
+        </div>
+        <div class="d1">
+            scale(1)
+        </div>
+        <div class="d2">
+            scale(2, 2.5)
+        </div>
+        <div class="d3">
+            scale(3)
+        </div>
+        <div class="d_3">
+            scale(-3)
+        </div>
+        <div class="d_3d">
+            scale3d(2,1.5,3)
+        </div>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed
+    </footer>
+</body>
+
+</html>
