@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform - Skew Method</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 50px 0;
+            background-color: lightcyan;
+        }
+
+        header,
+        footer {
+            background-color: darkcyan;
+            color: lightcyan;
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main{
+            display: block;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        img {
+            display: inline-block;
+            mix-blend-mode: multiply;
+            border: 5px solid darkcyan;
+            margin: 100px auto 0 auto;
+
+            /* transform: skewX(10deg) skewY(20deg); */
+            transform: skew(10deg, 20deg);
+        }
+
+        span{
+            display: inline-block;
+            margin: 200px auto 0 auto;
+            font-size: xx-large;
+            color: goldenrod;
+            background-color: darkcyan;
+            font-weight: bold;
+            text-align: center;
+            transform: skew(-15deg) rotate(-15deg);
+            padding: 30px;
+        }
+
+        span:hover{
+            cursor: pointer;
+            text-shadow: 10px 15px 5px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Transform - Skew Method</h1>
+    </header>
+
+    <main>
+        <img src="./gears.jpg" alt="">
+
+        <span>
+            Just for Text, hover here...
+        </span>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed
+    </footer>
+</body>
+
+</html>
