@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition - Speed Curve</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 50px 0;
+        }
+
+        header,
+        footer {
+            background-color: brown;
+            color: blanchedalmond;
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            width: 85%;
+            margin: 0 auto;
+            border: 5px solid #777;
+            background-color: #aaa;
+            padding: 15px;
+            border-radius: 70px;
+        }
+
+        section {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: darkorange;
+
+            /* transition: 1.5s all; */
+            /* transition: 1.5s all ease; */
+            /* transition: 1.5s all ease-in; */
+            /* transition: 1.5s all ease-in-out; */
+            /* transition: 1.5s all ease-out; */
+            transition: 1.5s steps(7);
+
+            transition-delay: 1500ms;
+        }
+
+        main:hover section {
+            margin-left: 80%;
+            background-color: brown;
+
+            transition: 1.5s all;
+            /* transition: 1.5s all ease; */
+            /* transition: 1.5s all ease-in; */
+            /* transition: 1.5s all ease-in-out; */
+            /* transition: 1.5s all ease-out; */
+            transition: 1.5s steps(7);
+
+            transition-delay: 100ms;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Transition - Speed Curve</h1>
+    </header>
+
+    <main>
+        <section></section>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+
+</html>
