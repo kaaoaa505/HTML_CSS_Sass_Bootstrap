@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Transform with Transition</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 50px 0;
+        }
+
+        header,
+        footer {
+            background-color: steelblue;
+            color: aquamarine;
+            text-align: center;
+            text-transform: uppercase;
+            position: fixed;
+            width: 100%;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            width: 90%;
+            margin: 0 auto;
+            background-color: azure;
+        }
+
+        section {
+            position: relative;
+            display: inline-block;
+            margin-top: 50px 25px 25px 25px;
+            width: 250px;
+            height: 150px;
+            text-align: center;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                width: 250px;
+                height: 150px;
+                top: 0;
+                left: 0;
+                transition: 1.5s all;
+                opacity: 90%;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 1.5s all;
+                    opacity: 20%;
+                }
+            }
+
+            p {
+                position: absolute;
+                top: 15px;
+                left: 40px;
+                font-weight: 700;
+                width: 170px;
+                font-size: 25px;
+                text-transform: uppercase;
+                transition: top 0.5s ease, text-shadow 0.5s linear, color 0.5s ease;
+            }
+
+            &:hover p {
+                top: 0;
+                color: white;
+                text-shadow: 5px 5px 15px black;
+            }
+
+            div.button {
+                position: absolute;
+                left: 80px;
+                bottom: 15px;
+                opacity: 50%;
+                transition: 0.5s;
+                text-shadow: 5px 5px 15px black;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                    opacity: 100%;
+                }
+
+                a {
+                    font-size: 12px;
+                    padding: 5px;
+                    text-decoration: none;
+                    color: white;
+                    border: 2px solid white;
+                    font-weight: bold;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gallery Transform with Transition</h1>
+    </header>
+
+    <main>
+        <section>
+            <img src="./01.jpg" alt="">
+            <p>The First Image</p>
+            <div class="button">
+                <a href="">Read More...</a>
+            </div>
+        </section>
+        <section>
+            <img src="./02.jpg" alt="">
+            <p>The Second Image</p>
+            <div class="button">
+                <a href="">Read More...</a>
+            </div>
+        </section>
+        <section>
+            <img src="./03.jpg" alt="">
+            <p>The Third Image</p>
+            <div class="button">
+                <a href="">Read More...</a>
+            </div>
+        </section>
+        <section>
+            <img src="./04.jpg" alt="">
+            <p>The Fourth Image</p>
+            <div class="button">
+                <a href="">Read More...</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+
+</html>
