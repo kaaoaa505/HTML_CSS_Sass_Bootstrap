@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations - KeyFrames</title>
+
+    <style>
+        @keyframes slideBox {
+
+            /* from { */
+            0% {
+                transform: translate(0px);
+            }
+
+            30% {
+                height: 10%;
+                width: 10%;
+            }
+
+            70% {
+                border-radius: 50%;
+                background-color: black;
+            }
+
+            /* to { */
+            100% {
+                transform: translate(calc(100vw - 180px)) rotate(90deg);
+            }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header,
+        footer {
+            position: fixed;
+            background-color: darkolivegreen;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            left: 0;
+            width: 100%;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            background-color: gray;
+            height: 100vh;
+            padding: 50px 0 20px 0;
+        }
+
+        .slide {
+            background-color: darkolivegreen;
+            width: 150px;
+            height: 150px;
+            margin-top: 50px;
+            margin-left: 10px;
+
+            animation: slideBox 3s ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Animation - KeyFrames</h1>
+    </header>
+
+    <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ut est molestias id,
+        veniam asperiores earum impedit sed maxime atque,
+        sequi nulla accusantium vero in nisi molestiae accusamus veritatis,
+        maiores perspiciatis.
+
+        <div class="slide"></div>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+</body>
+
+</html>
