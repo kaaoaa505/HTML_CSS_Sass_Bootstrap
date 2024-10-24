@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations - Bouncing Ball</title>
+
+    <style>
+        @keyframes bounce {
+            0% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(0) rotate(0deg);
+            }
+
+            10% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(100px) rotate(27deg);
+            }
+
+            20% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(200px) rotate(54deg);
+            }
+
+            30% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(300px) rotate(81deg);
+            }
+
+            40% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(400px) rotate(108deg);
+            }
+
+            48% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(480px) rotate(135deg);
+            }
+
+            50% {
+                width: 100px;
+                height: 90px;
+                transform: translateY(500px) rotate(162deg);
+            }
+
+            52% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(480px) rotate(189deg);
+            }
+
+            60% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(400px) rotate(216deg);
+            }
+
+            70% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(300px) rotate(243deg);
+            }
+
+            80% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(200px) rotate(270deg);
+            }
+
+            90% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(100px) rotate(297deg);
+            }
+
+            100% {
+                width: 100px;
+                height: 100px;
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header,
+        footer {
+            position: fixed;
+            width: 100%;
+            background-color: orangered;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        header {
+            top: 0;
+            height: 35px;
+        }
+
+        footer {
+            bottom: 0;
+            height: 15px;
+        }
+
+        .ball {
+            margin-top: 50px;
+            margin-left: 50px;
+
+            img {
+                width: 100px;
+                height: 100px;
+                animation: bounce 3s linear infinite;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Animations - Bouncing Ball</h1>
+    </header>
+
+    <main>
+        <div class="ball">
+            <img src="basketball.png" alt="ball">
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; Khaled Allam Ahmed 2024</p>
+    </footer>
+</body>
+
+</html>
