@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations - Loading Bar</title>
+    <style>
+        @keyframes barLoading {
+            0% {
+                background-color: transparent;
+                width: 0%;
+            }
+
+            50% {
+                background-color: aqua;
+                width: 50%;
+            }
+
+            100% {
+                background-color: aquamarine;
+                width: 100%;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body {
+            background-color: #333;
+            color: white;
+        }
+
+        header,
+        footer {
+            position: fixed;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: darkcyan;
+            color: white;
+            width: 100%;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        .loading-bar {
+            width: 1;
+            height: 10px;
+            background-color: aquamarine;
+
+            animation: barLoading 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-element">
+        <h1>Animations - Loading Bar</h1>
+    </header>
+    <main class="bottom-element">
+        <div class="loading-bar"></div>
+    </main>
+    <footer>
+        <p>Copyright &copy; Khaled Allam Ahemd 2024</p>
+    </footer>
+</body>
+
+<script>
+    const adjustMainTopMargin = () => {
+        var topElement = document.querySelector('header');
+        var bottomElement = document.querySelector('main');
+        var topElementHeight = topElement.offsetHeight;
+        bottomElement.style.marginTop = topElementHeight + 5 + 'px';
+    };
+
+    window.onload = function () {
+        adjustMainTopMargin();
+    };
+
+    window.addEventListener('resize', function () {
+        adjustMainTopMargin();
+    });
+</script>
+
+</html>
