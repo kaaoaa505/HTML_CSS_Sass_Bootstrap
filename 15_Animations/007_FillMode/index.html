@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations - Fill Mode</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            background-color: lightslategray;
+            color: steelblue;
+        }
+
+        header,
+        footer {
+            position: fixed;
+            left: 0;
+            width: 100%;
+
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px gray;
+            
+            background-color: aliceblue;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            background-color: aliceblue;
+            margin: 5px;
+        }
+
+        @keyframes fillModeAnimation {
+            from{
+                left: 0%;
+                border: 20px solid orange;
+                background-color: orangered;
+            }
+
+            to{
+                left: 75%;
+                border: 20px solid green;
+                background-color: darkgreen;
+                transform: rotate(180deg);
+            }
+        }
+        .test{
+            position: relative;
+            padding: 50px;
+            margin: 60px;
+            width: 0;
+            border: 20px solid goldenrod;
+            background-color: khaki;
+
+            animation-name: fillModeAnimation;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+
+            /* animation-fill-mode: forwards; */
+            animation-fill-mode: backwards;
+            animation-direction: reverse;
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Animations - Fill Mode</h1>
+    </header>
+
+    <main>
+        <div class="test"></div>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+
+    <script>
+        const adjustMainTop = () => {
+            const main = document.querySelector('main');
+            const header = document.querySelector('header');
+
+            main.style.marginTop = header.offsetHeight + 5 + 'px';
+        }
+
+        window.onload = () => {
+            adjustMainTop();
+        }
+
+        window.addEventListener('resize', () => {
+            adjustMainTop();
+        })
+    </script>
+</body>
+
+</html>
