@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass Partials</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css.map">
+</head>
+
+<body>
+    <header>
+        <h1>Sass Partials</h1>
+    </header>
+
+    <main>
+        <h2>Register Form</h2>
+
+        <form action="">
+            <div>
+                <label for="full_name">Full Name</label>
+                <input id="full_name" type="text" placeholder="Full Name...">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email...">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password...">
+            </div>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <small>
+            &copy; 2024 Khaled Allam Ahmed
+        </small>
+    </footer>
+
+    <script>
+        const adjustMainSize = () => {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const footer = document.querySelector('footer');
+
+            main.style.marginTop = header.offsetHeight + 'px';
+            main.style.marginBottom = footer.offsetHeight + 'px';
+        };
+
+        window.onload = () => {
+            adjustMainSize();
+        };
+
+        window.addEventListener('resize', () => {
+            adjustMainSize();
+        })
+    </script>
+</body>
+
+</html>

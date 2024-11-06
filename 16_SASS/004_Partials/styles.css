@@ -1,0 +1,74 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: aquamarine;
+  color: gray;
+}
+
+footer {
+  top: auto;
+  bottom: 0;
+}
+
+main {
+  background-color: lightblue;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+main h2 {
+  text-align: center;
+}
+main form {
+  width: 500px;
+  margin: 10px auto 0 auto;
+}
+main form div {
+  clear: both;
+  display: table;
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  background-color: lightgray;
+}
+main form div label,
+main form div input {
+  padding: 0;
+  margin: 0;
+}
+main form div label {
+  float: left;
+  width: 19%;
+}
+main form div input {
+  float: right;
+  width: 79%;
+}
+main form div input[type=submit] {
+  width: 100px;
+  cursor: pointer;
+}
+main form div:has(input[type=submit]) {
+  background: transparent;
+  border: none;
+}
+main form div:has(input[type=submit]) input[type=submit] {
+  border: 1px solid white;
+  margin-right: -2px;
+}/*# sourceMappingURL=styles.css.map */
