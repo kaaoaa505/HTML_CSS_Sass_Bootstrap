@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure SASS For projects</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Configure SASS For projects</h1>
+        <h3>Use vscode extension -Live Sass Compiler- by -Glenn Marks-</h3>
+    </header>
+
+    <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste architecto accusamus alias error neque quo enim. Praesentium maiores beatae perferendis perspiciatis magni, illo expedita, recusandae aliquam quae explicabo voluptatum.
+    </main>
+
+    <footer>
+        &copy; 2024 Khaled Allam Ahmed
+    </footer>
+
+    <script>
+        const adjustMain = () => {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const footer = document.querySelector('footer');
+
+            main.style.marginTop = header.offsetHeight + 'px';
+            main.style.marginBottom = footer.offsetHeight + 'px';
+        }
+
+        window.onload = () => {
+            adjustMain();
+        }
+
+        window.addEventListener('resize', () => {
+            adjustMain();
+        })
+    </script>
+</body>
+</html>

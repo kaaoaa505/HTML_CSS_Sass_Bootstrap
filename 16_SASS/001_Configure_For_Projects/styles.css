@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: cursive;
+  opacity: 0.5;
+  background: conic-gradient(at 78% 3%, rgba(0, 0, 0, 0) 75%, lightgray 0), conic-gradient(at 78% 3%, rgba(0, 0, 0, 0) 75%, lightgray 0) 32px 32px, conic-gradient(at 78% 3%, rgba(0, 0, 0, 0) 75%, lightgray 0) 64px 64px, conic-gradient(at 78% 3%, rgba(0, 0, 0, 0) 75%, lightgray 0) 96px 96px, conic-gradient(at 3% 78%, rgba(0, 0, 0, 0) 75%, lightgray 0) 0 96px, conic-gradient(at 3% 78%, rgba(0, 0, 0, 0) 75%, lightgray 0) 32px 0, conic-gradient(at 3% 78%, rgba(0, 0, 0, 0) 75%, lightgray 0) 64px 32px, conic-gradient(at 3% 78%, rgba(0, 0, 0, 0) 75%, lightgray 0) 96px 64px #E4E4ED;
+  background-size: 128px 128px;
+}
+body header,
+body footer {
+  opacity: 1;
+  background-color: lightgray;
+  color: brown;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid white;
+}
+body header {
+  top: 0;
+}
+body footer {
+  bottom: 0;
+}
+body main {
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: antiquewhite;
+}/*# sourceMappingURL=styles.css.map */

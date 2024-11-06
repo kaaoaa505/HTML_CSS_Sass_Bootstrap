@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations - Sunset Animation</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        @keyframes forestAnimation {
+            0% {
+                background-color: rgba(221, 102, 0, 50%);
+            }
+
+            35% {
+                background-color: rgba(204, 68, 0, 50%);
+            }
+
+            55% {
+                background-color: rgba(187, 34, 0, 50%);
+            }
+
+            90% {
+                background-color: rgba(0, 0, 68, 50%);
+            }
+
+            100% {
+                background-color: rgba(0, 0, 34, 50%);
+            }
+        }
+
+        body {
+            overflow: hidden;
+            background-image: url('./forest.png');
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            background-blend-mode: multiply;
+
+            animation-name: forestAnimation;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+
+        header,
+        footer {
+            position: fixed;
+            left: 0;
+            width: 100%;
+
+            background-color: cadetblue;
+            color: darkslategrey;
+
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            opacity: 50%;
+        }
+
+        @keyframes sunsetAnimation {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1;
+                transform: translate(-150px, 150px);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-300px, 300px);
+            }
+        }
+
+        .sun {
+            position: absolute;
+            top: 45vh;
+            left: 200px;
+
+            height: 100px;
+            width: 100px;
+
+            background-color: orange;
+            border-radius: 50%;
+            box-shadow: 0 0 20px 5px orange;
+
+            animation-name: sunsetAnimation;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes moonAnimation {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1;
+                transform: translate(150px, 150px);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(200px, 200px);
+            }
+        }
+
+        .moon {
+            position: absolute;
+            top: 40vh;
+            right: 200px;
+
+            height: 100px;
+            width: 100px;
+
+            background-color: transparent;
+            border-radius: 50%;
+            box-shadow: 15px 15px 0 0 white;
+
+            animation-name: moonAnimation;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-fill-mode: backwards;
+            animation-direction: reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Animations - Sunset Animation</h1>
+    </header>
+
+    <main>
+        <div class="sun"></div>
+        <div class="moon"></div>
+    </main>
+
+    <footer>
+        &copy; Khaled Allam Ahmed 2024
+    </footer>
+
+    <script>
+        const adjustMainTop = () => {
+            const main = document.querySelector('main');
+            const header = document.querySelector('header');
+            const body = document.querySelector('body');
+
+            main.style.marginTop = header.offsetHeight + 5 + 'px';
+        }
+
+        window.onload = () => {
+            adjustMainTop();
+        };
+
+        window.addEventListener('resize', () => {
+            adjustMainTop();
+        });
+    </script>
+</body>
+
+</html>

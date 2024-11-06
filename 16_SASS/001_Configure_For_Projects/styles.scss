@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    font-family: cursive;
+    opacity: 0.5;
+
+    background:
+        conic-gradient(at 78% 3%, #0000 75%, lightgray 0),
+        conic-gradient(at 78% 3%, #0000 75%, lightgray 0) 32px 32px,
+        conic-gradient(at 78% 3%, #0000 75%, lightgray 0) calc(2*32px) calc(2*32px),
+        conic-gradient(at 78% 3%, #0000 75%, lightgray 0) calc(3*32px) calc(3*32px),
+        conic-gradient(at 3% 78%, #0000 75%, lightgray 0) 0 calc(3*32px),
+        conic-gradient(at 3% 78%, #0000 75%, lightgray 0) 32px 0,
+        conic-gradient(at 3% 78%, #0000 75%, lightgray 0) calc(2*32px) 32px,
+        conic-gradient(at 3% 78%, #0000 75%, lightgray 0) calc(3*32px) calc(2*32px) #E4E4ED;
+    background-size: calc(4*32px) calc(4*32px);
+
+    header,
+    footer {
+        opacity: 1;
+
+        background-color: lightgray;
+        color: brown;
+
+        position: fixed;
+        left: 0;
+        width: 100%;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        outline: 1px solid white;
+    }
+
+    header {
+        top: 0;
+    }
+
+    footer {
+        bottom: 0;
+    }
+
+    main {
+        opacity: 1;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: antiquewhite;
+    }
+}
