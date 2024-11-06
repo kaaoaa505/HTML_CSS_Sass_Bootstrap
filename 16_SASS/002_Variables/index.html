@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Variables</title>
+    
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css.map">
+</head>
+<body>
+    <header>
+        <h1>SASS Variables</h1>
+    </header>
+
+    <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptates fugit doloribus quisquam vitae recusandae magnam illo quaerat necessitatibus, odio temporibus ex debitis fugiat explicabo nesciunt expedita commodi! Ducimus, sunt?
+    </main>
+    
+    <footer>
+        &copy; 2024 Khaled Allam Ahmed
+    </footer>
+
+    <script>
+        const adjustMainTopBottom = () => {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const footer = document.querySelector('footer');
+
+            main.style.marginTop = header.offsetHeight + 'px';
+            main.style.marginBottom = footer.offsetHeight + 'px';
+        }
+
+        window.onload = () => {
+            adjustMainTopBottom();
+        };
+
+        window.addEventListener('resize', () => {
+            adjustMainTopBottom();
+        });
+    </script>
+</body>
+</html>
