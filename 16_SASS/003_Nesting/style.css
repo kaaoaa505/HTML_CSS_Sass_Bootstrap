@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: cursive;
+}
+body header,
+body footer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: brown;
+  color: chocolate;
+  text-align: center;
+  text-transform: uppercase;
+}
+body footer {
+  top: auto;
+  bottom: 0;
+}
+body main {
+  background-color: chocolate;
+  color: white;
+  height: 100vh;
+  padding: 10px;
+}
+body main nav {
+  margin: 10px;
+}
+body main nav ul {
+  width: 400px;
+  margin: 0 auto;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+body main nav ul li {
+  padding: 10px;
+}
+body main nav ul li a {
+  padding: 10px;
+}
+body main nav ul li a:hover,
+body main nav ul li a:focus {
+  color: lightgrey;
+  border: 1px solid lightgrey;
+}
+body main nav ul li a:active {
+  color: darkblue;
+}/*# sourceMappingURL=style.css.map */
