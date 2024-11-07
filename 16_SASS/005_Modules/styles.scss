@@ -1,0 +1,40 @@
+@use 'variables_v1' as v1;
+@use 'variables_v2' as v2;
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header,
+footer {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: blanchedalmond;
+    color: cadetblue;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    z-index: 1000;
+}
+
+footer {
+    top: auto;
+    bottom: 0;
+}
+
+main {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgreen;
+
+    color: v1.$main_color;
+}

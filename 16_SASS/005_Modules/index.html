@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Modules</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>SASS Modules</h1>
+    </header>
+
+    <main>
+        <p>
+            Velit duis labore nostrud incididunt tempor fugiat velit et mollit cupidatat. Duis est ex culpa cillum
+            nostrud in adipisicing cupidatat ea quis. Consequat sunt cillum ullamco esse labore anim nostrud sit
+            voluptate sit.
+        </p>
+        <p>
+            Aliquip deserunt et voluptate adipisicing fugiat occaecat mollit ex nulla mollit. Ex ut ipsum est occaecat
+            aliquip. Aliquip eu nulla dolor commodo dolore tempor incididunt pariatur minim sit ad Lorem ad. Voluptate
+            deserunt laborum officia in. Qui esse occaecat consectetur consequat quis non cupidatat. Id et nulla esse
+            consectetur elit est nostrud minim dolor incididunt esse ullamco mollit nisi. Fugiat ullamco amet nisi do
+            officia exercitation sit officia aute magna sit.
+        </p>
+        <p>
+            Est veniam dolore commodo cillum excepteur culpa magna adipisicing eiusmod dolor quis. Incididunt non nulla
+            fugiat cupidatat minim ad. Aliquip elit eiusmod sit quis elit qui ex deserunt cillum dolore voluptate ea
+            officia. Velit fugiat nisi deserunt tempor quis.
+        </p>
+    </main>
+
+    <footer>
+        &copy; 2024 Khaled Allam Ahmed
+    </footer>
+
+    <script>
+        const adjustMainSize = () => {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const footer = document.querySelector('footer');
+
+            main.style.paddingTop = header.offsetHeight + 5 + 'px';
+            main.style.paddingBottom = footer.offsetHeight + 5 + 'px';
+        };
+
+        window.onload = () => {
+            adjustMainSize();
+        };
+
+        window.addEventListener('resize', () => {
+            adjustMainSize();
+        });
+    </script>
+</body>
+
+</html>
