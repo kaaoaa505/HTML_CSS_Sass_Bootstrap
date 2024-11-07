@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance with SASS</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inheritance with SASS</h1>
+    </header>
+
+    <main>
+        <div class="box_1">
+            test 001
+        </div>
+        <div class="box_2">
+            test 002
+        </div>
+        <div class="box_3">
+            test 003
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Khaled Allam Ahmed
+    </footer>
+    
+    <script>
+        const adjustMainSize = () => {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const footer = document.querySelector('footer');
+
+            main.style.paddingTop = header.offsetHeight + 5 + 'px';
+            main.style.paddingBottom = footer.offsetHeight + 5 + 'px';
+        };
+
+        window.onload = () => {
+            adjustMainSize();
+        };
+
+        window.addEventListener('resize', () => {
+            adjustMainSize();
+        });
+    </script>
+</body>
+</html>

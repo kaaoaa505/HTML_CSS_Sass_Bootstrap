@@ -1,0 +1,43 @@
+@use 'reset';
+@use 'layout';
+
+%hoverOnTitle {
+    &:hover {
+        background-color: white;
+        color: darkgreen;
+        transition: 1s linear;
+        cursor: pointer;
+    }
+}
+
+.box {
+    @extend %hoverOnTitle;
+
+    border: 5px solid white;
+}
+
+.box_1 {
+    @extend .box;
+
+    font-size: 20px;
+}
+
+.box_2 {
+    @extend .box_1;
+
+    font-size: 30px;
+    margin: 15px;
+    outline: 5px dashed black;
+
+    text-align: center
+}
+
+.box_3 {
+    @extend .box_2;
+
+    font-size: 40px;
+    margin: 30px;
+    color: green;
+
+    text-align: right;
+}

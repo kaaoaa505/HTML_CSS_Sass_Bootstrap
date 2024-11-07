@@ -1,0 +1,63 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+}
+
+header, footer, main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header, footer {
+  color: indianred;
+  background-color: coral;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1000;
+}
+
+footer {
+  top: auto;
+  bottom: 0;
+}
+
+main {
+  padding: 5px;
+  background-color: goldenrod;
+  height: 100vh;
+}
+
+.box:hover, .box_1:hover, .box_2:hover, .box_3:hover {
+  background-color: white;
+  color: darkgreen;
+  transition: 1s linear;
+  cursor: pointer;
+}
+
+.box, .box_1, .box_2, .box_3 {
+  border: 5px solid white;
+}
+
+.box_1, .box_2, .box_3 {
+  font-size: 20px;
+}
+
+.box_2, .box_3 {
+  font-size: 30px;
+  margin: 15px;
+  outline: 5px dashed black;
+  text-align: center;
+}
+
+.box_3 {
+  font-size: 40px;
+  margin: 30px;
+  color: green;
+  text-align: right;
+}/*# sourceMappingURL=styles.css.map */
