@@ -1,0 +1,17 @@
+@mixin text_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@mixin center_upper {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin main_p($font_size) {
+    padding: 5px;
+    border: 1px solid white;
+    font-size: $font_size ;
+}

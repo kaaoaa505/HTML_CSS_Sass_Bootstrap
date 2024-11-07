@@ -1,0 +1,36 @@
+@use 'reset';
+@use 'variables_v1' as v;
+
+header,
+footer,
+main {
+    @include v.text_fixed;
+    color: cadetblue;
+}
+
+header,
+footer {
+    background-color: darkred;
+    z-index: 1000;
+
+    @include v.center_upper;
+}
+
+footer {
+    top: auto;
+    bottom: 0;
+}
+
+main {
+    background-color: black;
+    z-index: 500;
+    height: 100vh;
+
+    padding: 5px;
+
+    overflow: scroll;
+
+    p {
+        @include v.main_p(26px);
+    }
+}

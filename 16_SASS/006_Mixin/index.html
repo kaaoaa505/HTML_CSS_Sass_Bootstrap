@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Mixin</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>SASS Mixin</h1>
+    </header>
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+
+        <p>
+            Nam suscipit esse ex, cupiditate voluptates veniam
+            aliquam vitae consequuntur eius? Tempora sed incidunt,
+        </p>
+
+        <p>
+            ab aliquid neque architecto deserunt porro quaerat quos?
+        </p>
+    </main>
+
+    <footer>
+        &copy; 2024 Khaled Allam Ahmed
+    </footer>
+
+    <script>
+        const adjustMainSize = () => {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const footer = document.querySelector('footer');
+
+            main.style.paddingTop = header.offsetHeight + 5 + 'px';
+            main.style.paddingBottom = footer.offsetHeight + 5 + 'px';
+        };
+
+        window.onload = () => {
+            adjustMainSize();
+        };
+
+        window.addEventListener('resize', () => {
+            adjustMainSize();
+        });
+    </script>
+</body>
+</html>
