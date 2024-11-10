@@ -1,0 +1,11 @@
+@use 'variables_v1' as v;
+@use 'reset';
+@use 'layout';
+
+.heading {
+    padding: calc((120 / 30) + 6 + 10) + px;
+}
+
+p.first {
+    width: calc((120px + 30px) * 1.5);
+}

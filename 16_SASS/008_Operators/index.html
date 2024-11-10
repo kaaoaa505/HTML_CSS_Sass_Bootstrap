@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Operators</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>SASS Operators</h1>
+    </header>
+
+    <main>
+        <h1 class="heading">
+            Main Heading
+        </h1>
+
+        <p class="first">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque repellendus ab accusantium minima enim rem
+            aut
+            distinctio accusamus dolorem odit laudantium ducimus eius quo illo maxime harum, eos sunt corrupti.
+        </p>
+
+        <hr>
+
+        <p>
+            Tenetur
+            voluptatibus labore assumenda commodi amet, nostrum error ea itaque veniam et iure nulla enim ullam nobis
+            beatae
+            consequatur voluptates dolore atque? Facilis iusto illo, veniam blanditiis aspernatur, odit error sint,
+            tempora
+            tempore sequi voluptas fuga quidem totam quaerat repudiandae explicabo. Magnam dolorum impedit eaque
+            veritatis,
+            consectetur et aperiam culpa similique maiores quos, porro odio facilis inventore deleniti dolor
+            exercitationem
+            aut provident nemo at soluta quidem veniam sed cumque. Cupiditate iste, perspiciatis ratione debitis
+            laudantium
+            quisquam? Quas doloremque fuga incidunt soluta culpa voluptas pariatur, animi a commodi dolor ullam
+            obcaecati
+            sunt sequi labore! Corporis temporibus omnis officiis dolorem recusandae. Molestias assumenda repudiandae
+            quam
+            quo dicta, facilis quaerat debitis minima voluptate architecto non amet ut blanditiis corrupti libero
+            impedit
+            itaque eaque illum iure a veniam totam, fugiat error dolore! Rerum nobis sit nisi molestias corrupti quia
+            enim
+            in, saepe id fugit, ab esse ipsum, culpa recusandae labore accusantium dolore ratione. Doloremque ipsam
+            dolor
+            enim, ipsa perspiciatis quam provident voluptatibus voluptatem voluptates nobis excepturi assumenda
+            similique
+            suscipit officia sint. Nam, totam voluptatem rem sed impedit libero earum quisquam tempora cum. Unde nam
+            nobis
+            numquam nemo autem magni placeat? Beatae debitis impedit aut labore porro iure quaerat deserunt harum! Harum
+            ab
+            ipsa perspiciatis esse asperiores eligendi et, rerum sapiente tempore quasi commodi, nulla perferendis eius
+            tenetur optio non aut amet voluptatem voluptates? Corporis doloremque molestias, blanditiis quidem error
+            impedit
+            vel! Voluptates magnam ad provident sequi repellendus ratione tempora beatae dignissimos necessitatibus
+            ipsum
+            vero dicta rem molestias sint eius, id corrupti aspernatur consequuntur harum libero adipisci. Fugiat autem
+            maxime odit nostrum perferendis labore consectetur, blanditiis sed libero minus ipsum, necessitatibus
+            repellat
+            hic? Fugiat, sit ipsa esse repudiandae, accusantium repellendus porro ratione doloremque aut voluptate magni
+            totam iusto, veritatis hic voluptates aspernatur explicabo culpa excepturi eum! Distinctio debitis aperiam
+            minima doloremque repudiandae consequuntur dolorum, voluptatibus, iure beatae totam dicta libero molestias
+            impedit quibusdam fugiat modi blanditiis sit aspernatur similique architecto. Quos facere provident
+            cupiditate
+            explicabo laboriosam repellendus, exercitationem ipsa? Magni necessitatibus unde magnam? Velit, voluptatum
+            nobis. Repellendus qui est quasi minus dignissimos, necessitatibus esse eveniet molestiae iste reiciendis,
+            fuga
+            error aperiam voluptatem enim alias. Iure sint expedita, eius quisquam illo vel, cum magni, a exercitationem
+            praesentium facilis quo commodi inventore earum. Fuga maiores praesentium voluptas soluta, tenetur ut
+            temporibus! Necessitatibus aliquam repellat quibusdam obcaecati tempora dignissimos consequuntur nobis
+            cupiditate minima? Consequuntur, ad. Natus soluta ex vel voluptas vero magnam pariatur eius, fugit illo,
+            iure
+            inventore praesentium dolores nostrum. Eveniet nihil debitis architecto labore perspiciatis, porro qui, quas
+            impedit accusamus illum nostrum et ratione recusandae reiciendis distinctio voluptatum dolorem! Error minima
+            excepturi tenetur non, expedita debitis fugiat earum iure quisquam adipisci sunt explicabo aliquid cum sed
+            eos
+            quis eligendi necessitatibus ut voluptatum labore veritatis vel est voluptates libero? Quis repellat cumque
+            ad
+            ducimus corrupti adipisci laboriosam exercitationem, dolore aliquam, at doloremque error in animi,
+            reiciendis
+            minima.
+        </p>
+    </main>
+
+    <footer>
+        &copy; 2024 Khaled Allam Ahmed
+    </footer>
+
+    <script>
+        const adjustMainSize = () => {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const footer = document.querySelector('footer');
+
+            main.style.paddingTop = header.offsetHeight + 5 + 'px';
+            main.style.paddingBottom = footer.offsetHeight + 5 + 'px';
+        };
+
+        window.onload = () => {
+            adjustMainSize();
+        };
+
+        window.addEventListener('resize', () => {
+            adjustMainSize();
+        });
+    </script>
+</body>
+
+</html>

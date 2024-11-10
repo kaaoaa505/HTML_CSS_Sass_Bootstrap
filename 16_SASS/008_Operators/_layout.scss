@@ -1,0 +1,28 @@
+header,footer,main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header,footer{
+    background-color: darkgrey;
+    color: cornflowerblue;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px white;
+
+    z-index: 1000;
+}
+
+footer{
+    top: auto;
+    bottom: 0;
+}
+
+main{
+    padding: 5px;
+    background-color: lightblue;
+    height: 100vh;
+}
