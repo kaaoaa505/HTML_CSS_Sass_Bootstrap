@@ -1,0 +1,5 @@
+@mixin mobile_view{
+    @media screen and (max-width: 680px) {
+        @content;
+    }
+}

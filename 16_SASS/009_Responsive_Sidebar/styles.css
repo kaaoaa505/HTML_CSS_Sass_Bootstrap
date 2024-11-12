@@ -1,0 +1,81 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+header,
+footer {
+  position: relative;
+  clear: both;
+  width: 100%;
+  background-color: darkcyan;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 5px solid lightgray;
+}
+
+footer {
+  top: auto;
+  bottom: 0;
+  clear: both;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+#app nav,
+#app main {
+  position: relative;
+  float: left;
+  padding: 10px;
+  height: 90vh;
+  outline: 5px solid gray;
+}
+#app nav {
+  background: radial-gradient(darkcyan, black);
+  color: white;
+  padding-left: 20px;
+}
+@media screen and (max-width: 680px) {
+  #app nav {
+    width: 64px;
+    padding-left: 5px;
+  }
+}
+#app nav h1 {
+  font-size: 40px;
+  background: linear-gradient(gray, black);
+}
+@media screen and (max-width: 680px) {
+  #app nav h1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  #app nav hr, #app nav br {
+    display: none;
+  }
+}
+#app nav ul {
+  list-style: none;
+}
+#app nav ul li {
+  padding: 10px;
+}
+#app nav ul li:hover {
+  background-color: darkcyan;
+  cursor: pointer;
+}
+#app main {
+  background: darkcyan;
+}/*# sourceMappingURL=styles.css.map */
